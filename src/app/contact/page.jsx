@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -21,16 +21,16 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-[#05070a]">
-
       {/* Hero Section */}
       <section className="relative h-[500px] pt-32 pb-16 overflow-hidden">
-<video src="/videos/contact.mp4"
-autoPlay
-loop
-muted
-playsInline
-className="absolute inset-0 w-full h-full object-cover opacity-20"
-/>
+        <video
+          src="/videos/contact.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        />
 
         <div className="absolute inset-0 bg-gradient-to-br from-[#05070a] via-transparent to-[#05070a]/80" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-float" />
@@ -65,47 +65,51 @@ className="absolute inset-0 w-full h-full object-cover opacity-20"
                       Address
                     </h3>
                     <p className="text-[#b5b0b0] leading-relaxed">
-                      E 308 Vijay Raja Ideal Homes,<br />
-                      Gudapakkam, Thiruvallur,<br />
-                      Chennai - 600124, TamilNadu,<br />
+                      E 308 Vijay Raja Ideal Homes,
+                      <br />
+                      Gudapakkam, Thiruvallur,
+                      <br />
+                      Chennai - 600124, TamilNadu,
+                      <br />
                       India
                     </p>
                     <p className="text-[#b5b0b0] leading-relaxed mt-3">
-                      Jagan Towers 864, 4, 2nd Floor,<br />
-                      P.H. Road, Kilpauk, Chennai-<br />
+                      Jagan Towers 864, 4, 2nd Floor,
+                      <br />
+                      P.H. Road, Kilpauk, Chennai-
+                      <br />
                       600010, India
                     </p>
                   </div>
 
-<div className="grid grid-cols-1 lg:grid-cols-2">
-                  {/* Phone */}
-                  <div className="text-center sm:text-left">
-                    <div className="w-14 h-14  mx-auto sm:mx-0 mb-4 rounded-full bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
-                      <Phone className="w-7 h-7 text-purple-400 " />
+                  <div className="grid grid-cols-1 lg:grid-cols-2">
+                    {/* Phone */}
+                    <div className="text-center sm:text-left">
+                      <div className="w-14 h-14  mx-auto sm:mx-0 mb-4 rounded-full bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
+                        <Phone className="w-7 h-7 text-purple-400 " />
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Phone
+                      </h3>
+                      <p className="text-[#b5b0b0]">+91 81908 38230</p>
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      Phone
-                    </h3>
-                    <p className="text-[#b5b0b0]">+91 81908 38230</p>
-                  </div>
 
-                  {/* Email */}
-                  <div className="text-center sm:text-left">
-                    <div className="w-14 h-14  mx-auto sm:mx-0 mb-4 rounded-full bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
-                      <Mail className="w-7 h-7 text-purple-400" />
+                    {/* Email */}
+                    <div className="text-center sm:text-left">
+                      <div className="w-14 h-14  mx-auto sm:mx-0 mb-4 rounded-full bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
+                        <Mail className="w-7 h-7 text-purple-400" />
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Email
+                      </h3>
+                      <a
+                        href="mailto:hr@shakuniya.in"
+                        className="text-purple-400 hover:text-purple-300 transition-colors"
+                      >
+                        hr@shakuniya.in
+                      </a>
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      Email
-                    </h3>
-                    <a
-                      href="mailto:hr@shakuniya.in"
-                      className="text-purple-400 hover:text-purple-300 transition-colors"
-                    >
-                      hr@shakuniya.in
-                    </a>
                   </div>
-</div>
-
                 </div>
               </div>
 
@@ -115,8 +119,8 @@ className="absolute inset-0 w-full h-full object-cover opacity-20"
                   Send us a message
                 </h2>
                 <p className="text-[#b5b0b0] mb-8">
-                  If you have any work from me or any types of queries related to
-                  my tutorial, you can send me message from here.
+                  If you have any work from me or any types of queries related
+                  to my tutorial, you can send me message from here.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -164,7 +168,7 @@ className="absolute inset-0 w-full h-full object-cover opacity-20"
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
